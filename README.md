@@ -3,15 +3,15 @@
 ## Submission Details
 **Title:** CyberGuard: Combining Diffusion Models and Language Understanding Models in a Cybersecurity Chatbot with Advanced Retrieval-Augmented Generation (RAG) Using a Microservices Architecture in a DevOps/MLOps Context  
 **Submission Date:** 2024-01-14  
-**Professor:** Lotfi EL AACHAK  
-**Master:** Cybersecurity and Big Data (Second Year)
+**Professor:** EL AACHAK Lotfi   
+**Master:** Cybersecurity and Big Data (Second Year) 
 **Program:** Deep Learning
 **Team Members:**  
-- Akzoun Hafsa  
-- Boublen Firdaous  
-- El Hayani Adnan  
-- El Yahyaouy Imane  
-- Zakaria Touyeb  
+- AKZOUN Hafsa  
+- BOULBEN Firdaous  
+- EL HAYANI Adnan  
+- EL YAHYAOUY Imane  
+- TOUYEB Zakaria   
 
 ## Short Description
 CyberGuard is an advanced cybersecurity chatbot combining Language Understanding Models (LUM), Diffusion Models for threat forecasting, and Retrieval-Augmented Generation (RAG) to deliver intelligent, real-time security insights. Built on a scalable microservices architecture with DevOps/MLOps integration.
