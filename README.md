@@ -14,7 +14,7 @@
 - TOUYEB Zakaria   
 
 ## Short Description
-CyberGuard is an advanced cybersecurity chatbot combining Language Understanding Models (LUM), Diffusion Models for threat forecasting, and Retrieval-Augmented Generation (RAG) to deliver intelligent, real-time security insights. Built on a scalable microservices architecture with DevOps/MLOps integration.
+**CyberGuard** is an advanced cybersecurity chatbot combining Language Understanding Models (LUM), Diffusion Models for threat forecasting, and Retrieval-Augmented Generation (RAG) to deliver intelligent, real-time security insights. Built on a scalable microservices architecture with DevOps/MLOps integration.
 
 ## Project Overview
 CyberGuard is an intelligent cybersecurity chatbot designed to handle complex security queries, provide incident responses, and assist in threat analysis. The system integrates advanced Language Understanding Models (LUM) for contextual comprehension, Diffusion Models for threat forecasting, and Retrieval-Augmented Generation (RAG) for enriched responses. Built on a scalable microservices architecture, the project ensures high availability and maintainability, leveraging DevOps/MLOps practices for efficient deployment and operation.
