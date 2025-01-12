@@ -20,48 +20,35 @@
 CyberGuard is an intelligent cybersecurity chatbot designed to handle complex security queries, provide incident responses, and assist in threat analysis. The system integrates advanced Language Understanding Models (LUM) for contextual comprehension, Diffusion Models for threat forecasting, and Retrieval-Augmented Generation (RAG) for enriched responses. Built on a scalable microservices architecture, the project ensures high availability and maintainability, leveraging DevOps/MLOps practices for efficient deployment and operation.
 
 ## Objectives
-1. **Develop a Cybersecurity-Focused Chatbot**: Intelligent response system for cybersecurity inquiries.
-2. **Integrate Diffusion Models for Threat Forecasting**: Predict threat spread in network environments.
-3. **Leverage Language Understanding Models (LUM)**: Use state-of-the-art models (GPT-4, BERT) for accurate user input understanding.
-4. **Implement Advanced RAG**: Enhance chatbot responses with real-time data retrieval.
-5. **Adopt Microservices Architecture**: Modular system design for scalability and maintainability.
-6. **Apply DevOps/MLOps Practices**: Implement CI/CD, model management, and infrastructure automation.
+The project aims to develop a cybersecurity-focused chatbot designed to intelligently respond to cybersecurity inquiries. It will integrate diffusion models for threat forecasting to predict the spread of threats within network environments. The chatbot will leverage advanced language understanding models (LUM) like GPT-4 and BERT for accurate user input comprehension. To enhance its responses, the chatbot will implement advanced retrieval-augmented generation (RAG) for real-time data retrieval. The system will adopt a microservices architecture for scalability and maintainability, and DevOps/MLOps practices will be applied, including continuous integration and deployment (CI/CD), model management, and infrastructure automation.
 
 ## System Architecture
 
-### Microservices Components
-- **Language Understanding Service**: NLP engine for query comprehension.
-- **Diffusion Prediction Service**: Threat forecasting using diffusion models.
-- **RAG Integration Service**: Real-time data retrieval and integration.
-- **Security Intelligence Service**: Access to threat databases and security advisories.
-- **User Interface (UI)**: Interactive frontend for security analysts.
+### Technology Stack
+   **Spring Boot**: Used for authentication and registration, and integration with databases.
+   **Flask**: Implements lightweight microservices for Python-based services, specifically for the RAG model.
+   **Angular**: Frontend service for the application.
+   **Python**: Utilized for Python-based services, including the RAG model and diffusion prediction.
 
 ### DevOps/MLOps Integration
 - **CI/CD Pipelines**: Automated testing, deployment, and monitoring.
-- **Containerization**: Docker for services, Kubernetes for orchestration.
-- **Model Management**: MLflow for model tracking and deployment.
-- **Infrastructure as Code**: Terraform/Ansible for infrastructure provisioning.
-- **Monitoring & Logging**: Prometheus, Grafana, ELK Stack for observability.
-
-## Technologies Used
-- **Backend**: Python (FastAPI), Spring Boot
-- **Frontend**: Angular
-- **Machine Learning**: PyTorch, TensorFlow, Hugging Face Transformers
-- **Containerization**: Docker, Kubernetes
-- **DevOps/MLOps**: Jenkins/GitHub Actions, MLflow, Terraform/Ansible
-- **Monitoring**: Prometheus, Grafana, ELK Stack
+- - **DevOps/MLOps**: GitHub Actions, MLflow
+- **Containerization**: Docker for services.
 
 ## Setup Instructions
 1. **Clone the Repository:**  
-   `git clone https://github.com/your-repo/cyberguard.git`
+   **Frontend**: https://github.com/firdaous-boulben/CyberGuard.git
+   **Backend**: https://github.com/hafsakzoun/ChatBoot-security.git
+   **Rag Model**: https://github.com/adnanelhayani/chatbot_rag.git
+   **Diffusion Model**: 
 
-2. **Build Docker Containers:**  
+3. **Build Docker Containers:**  
    `docker-compose up --build`
 
-3. **Deploy Kubernetes Cluster:**  
+4. **Deploy Kubernetes Cluster:**  
    `kubectl apply -f k8s/`
 
-4. **Access the UI:**  
+5. **Access the UI:**  
    Open `http://localhost:4200` in your browser.
 
 ## Report Plan
@@ -77,11 +64,6 @@ CyberGuard is an intelligent cybersecurity chatbot designed to handle complex se
 - Diffusion Models in threat prediction
 - Retrieval-Augmented Generation (RAG)
 
-### **Chapter 3: System Design**
-- Microservices architecture overview
-- Component design and interactions
-- Technology stack justification
-
 ### **Chapter 4: Implementation**
 - Development of chatbot services
 - Integration of diffusion models
@@ -90,25 +72,13 @@ CyberGuard is an intelligent cybersecurity chatbot designed to handle complex se
 
 ### **Chapter 5: Testing and Evaluation**
 - Functional testing of services
-- Performance evaluation (response time, scalability)
 - Threat prediction accuracy
 
-### **Chapter 6: Results and Discussion**
-- Analysis of chatbot performance
-- Threat forecasting effectiveness
-- Impact of RAG on response quality
-
-### **Chapter 7: Conclusion and Future Work**
+### **Chapter 7: Conclusion**
 - Summary of findings
 - Limitations
 - Future improvements
 
 ## Contribution
 Feel free to contribute by submitting issues or pull requests.
-
-## License
-[MIT License](LICENSE)
-
-## Contact
-For any inquiries, contact [Your Name] at [your.email@example.com].
 
