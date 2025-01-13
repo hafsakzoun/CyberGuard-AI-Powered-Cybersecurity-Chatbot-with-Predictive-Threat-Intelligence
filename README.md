@@ -1,131 +1,187 @@
-# CyberGuard: AI-Powered Cybersecurity Chatbot
+# *CyberGuard: AI-Powered Cybersecurity Chatbot*
 
-## Submission Details
-**Title:** CyberGuard: Combining Diffusion Models and Language Understanding Models in a Cybersecurity Chatbot with Advanced Retrieval-Augmented Generation (RAG) Using a Microservices Architecture in a DevOps/MLOps Context  
-**Submission Date:** 2024-01-14  
-**Professor:** EL AACHAK Lotfi  
-**Master:** Cybersecurity and Big Data (Second Year)  
-**Module:** Deep Learning  
-**Team Members:**  
-- AKZOUN Hafsa  
-- BOULBEN Firdaous  
-- EL HAYANI Adnan  
-- EL YAHYAOUY Imane  
-- TOUYEB Zakaria  
+![CyberGuard ChatBot](images/empty.png)  
 
-## Table of Contents
-1. Introduction  
-2. Retrieval-Augmented Generation (RAG) Model  
-3. Diffusion Model for Threat Forecasting  
-4. System Implementation  
-5. Testing and Evaluation  
-6. Conclusion  
+## 📄 *Submission Details*  
+- *Title:* CyberGuard: Combining Diffusion Models and Language Understanding Models in a Cybersecurity Chatbot with Advanced Retrieval-Augmented Generation (RAG) Using a Microservices Architecture in a DevOps/MLOps Context  
+- *Submission Date:* 2024-01-14  
+- *Professor:* EL AACHAK Lotfi  
+- *Master's Program:* Cybersecurity and Big Data (Second Year)  
+- *Module:* Deep Learning  
+- *Team Members:*  
+  - AKZOUN Hafsa  
+  - BOULBEN Firdaous  
+  - EL HAYANI Adnan  
+  - EL YAHYAOUY Imane  
+  - TOUYEB Zakaria  
 
 ---
 
-## Chapter 1: Introduction
-Cybersecurity threats are becoming increasingly complex, requiring innovative solutions for timely detection and response. The need for intelligent, scalable, and adaptive systems has led to the development of **CyberGuard**, a chatbot designed to handle cybersecurity-related inquiries. This project integrates advanced Language Understanding Models (LUM), Diffusion Models for threat forecasting, and Retrieval-Augmented Generation (RAG) to provide comprehensive, real-time insights. Built on a microservices architecture, CyberGuard ensures scalability and maintainability, supported by DevOps/MLOps practices for efficient deployment and operation.
-
-### Objectives
-- **Develop a Cybersecurity-Focused Chatbot:** Intelligent response system for cybersecurity inquiries.
-- **Integrate Diffusion Models for Threat Forecasting:** Predict the spread of threats in network environments.
-- **Leverage Language Understanding Models (LUM):** Use models like GPT-4 and BERT for accurate user input comprehension.
-- **Implement Advanced RAG:** Enhance chatbot responses with real-time data retrieval.
-- **Adopt Microservices Architecture:** Modular system design for scalability.
-- **Apply DevOps/MLOps Practices:** CI/CD, model management, and infrastructure automation.
+## 📚 *Table of Contents*  
+1. [Introduction](#chapter-1-introduction)  
+2. [Retrieval-Augmented Generation (RAG) Model](#chapter-2-retrieval-augmented-generation-rag-model)  
+3. [Diffusion Model for Threat Forecasting](#chapter-3-diffusion-model-for-threat-forecasting)  
+4. [System Implementation](#chapter-4-system-implementation)  
+5. [Testing and Evaluation](#chapter-5-testing-and-evaluation)  
+6. [Conclusion](#chapter-6-conclusion)  
 
 ---
 
-## Chapter 2: Retrieval-Augmented Generation (RAG) Model
-### Overview
-The CyberGuard Retrieval-Augmented Generation (RAG) microservice is designed to intelligently handle cybersecurity-related queries. It integrates Google’s Generative AI for advanced language understanding and utilizes document retrieval to provide accurate, context-rich responses. This service is built using Flask and MongoDB and is part of the larger CyberGuard microservices ecosystem.
+## 📖 *Chapter 1: Introduction*  
+Cybersecurity threats are evolving rapidly, requiring adaptive and intelligent defense mechanisms. *CyberGuard* addresses this need by integrating *Language Understanding Models (LUM), **Diffusion Models* for threat forecasting, and *Retrieval-Augmented Generation (RAG)* to deliver real-time, context-aware cybersecurity insights. Designed with a *microservices architecture* and deployed using *DevOps/MLOps practices*, CyberGuard ensures scalability, maintainability, and rapid deployment.
 
-### Key Features
-- **Retrieval-Augmented Generation (RAG):** Combines AI-generated responses with document retrieval for accurate answers.
-- **Google Generative AI Integration:** Uses Google Gemini Pro for natural language understanding and response generation.
-- **PDF Knowledge Base:** Automatically loads and processes cybersecurity-related PDFs for context-aware responses.
-- **Vector Database (Chroma):** Embeds and stores document vectors for efficient information retrieval.
-- **MongoDB Integration::** Tracks user conversations and interactions for session continuity.
-- **REST API with CORS:** Allows smooth interaction with the Angular frontend through secure API calls.
-  
-### Technology Stack
-- Dynamic data retrieval for accurate response generation
-- Backend: Python, Flask
-- AI Models: Google Generative AI (Gemini Pro)
-- Vector Database: Chroma for document indexing and retrieval
-- Database: MongoDB for storing conversations
+### 🎯 *Objectives*  
+- *Develop a Cybersecurity Chatbot:* Provide intelligent, real-time responses to cybersecurity queries.  
+- *Implement Diffusion Models:* Predict the spread of cybersecurity threats in network environments.  
+- *Leverage LUM:* Use models like *Google Gemini Pro* for accurate understanding of user inputs.  
+- *Enhance Responses with RAG:* Combine data retrieval and AI generation for context-rich answers.  
+- *Adopt Microservices Architecture:* Ensure modularity and scalability.  
+- *Integrate DevOps/MLOps Practices:* Enable CI/CD, model management, and automation.
 
 ---
 
-## Chapter 3: Diffusion Model for Threat Forecasting
-### Overview
-The Diffusion Model simulates and predicts how cybersecurity threats propagate through network systems. This predictive capability helps security analysts anticipate and mitigate risks.
+## 🤖 *Chapter 2: Retrieval-Augmented Generation (RAG) Model*  
 
-### Implementation
-- **Technology:** Python-based simulation
-- **Framework:** Flask microservice
-- **Functionality:** Real-time threat forecasting and analysis
+### 📌 *Overview*  
+The RAG microservice uses *Google Generative AI (Gemini Pro)* for advanced natural language understanding and integrates a document retrieval system for precise, context-aware answers. It is built using *Flask* and *MongoDB* as part of the larger CyberGuard system.
 
-### Features
-- Visualization of threat spread
-- Early detection and proactive defense mechanisms
+### 🔑 *Key Features*  
+- *RAG Model:* Combines AI-generated responses with real-time document retrieval for accuracy.  
+- *Google Generative AI Integration:* Leverages *Gemini Pro* for natural language comprehension.  
+- *PDF Knowledge Base:* Loads and processes cybersecurity PDFs for knowledge-rich answers.  
+- *Vector Database (Chroma):* Efficient document indexing and retrieval.  
+- *MongoDB Integration:* Stores user interactions for seamless session continuity.  
+- *REST API with CORS:* Enables secure communication with the Angular frontend.  
+
+### 🛠 *Technology Stack*  
+- *Backend:* Python, Flask  
+- *AI Models:* Google Generative AI (Gemini Pro)  
+- *Vector Database:* Chroma  
+- *Database:* MongoDB  
+
+### 🏗 *Project Architecture*  
+
+![Architecture of RAG Model](images/ArchRagModel.png)  
+![MongoDB Conversation Storage](images/conversations.png)  
 
 ---
 
-## Chapter 4: System Implementation
-### Backend Development
-- **Spring Boot:** Manages user authentication and registration using Spring Security with JWT.
-- **Flask:** Hosts Python-based services for RAG and diffusion models.
+### 🚀 *How It Works*  
+1. *PDF Processing:* Loads and splits cybersecurity PDFs into searchable chunks.  
+2. *Data Embedding:* Uses *Google Generative AI embeddings* to encode the data.  
+3. *Query Handling:* RAG model generates accurate, context-aware responses.  
+4. *User Interaction:* REST API endpoints enable chatbot communication with the frontend.  
 
-### Frontend Development
-- **Angular:** Provides an interactive user interface for seamless interaction with the chatbot.
+---
 
-### DevOps/MLOps Integration
-- **CI/CD Pipelines:** Automated testing, deployment, and monitoring with GitHub Actions.
-- **Containerization:** Docker for service isolation and Kubernetes for orchestration.
+### 📡 *API Endpoints*  
+- **POST /ask**: Accepts user queries and returns AI-generated answers with source references.  
 
-### Repository Links
-- **Frontend:** [CyberGuard Frontend](https://github.com/firdaous-boulben/CyberGuard.git)  
-- **Backend (Spring Boot):** [ChatBoot Security](https://github.com/hafsakzoun/ChatBoot-security.git)  
-- **RAG Model:** [Chatbot RAG](https://github.com/adnanelhayani/chatbot_rag.git)  
-- **Diffusion Model:** *(Link to be added)*  
+![RAG Model Running](images/image.png)  
 
-### Setup Instructions
-1. **Clone the Repositories:**
-   ```bash
+---
+
+## 🔮 *Chapter 3: Diffusion Model for Threat Forecasting*  
+
+### 📌 *Overview*  
+The *Diffusion Model* simulates how cybersecurity threats spread across networks, providing proactive defense mechanisms for early threat detection.  
+
+### 🛠 *Implementation*  
+- *Technology:* Python  
+- *Framework:* Flask Microservice  
+
+### 🔑 *Features*  
+- Visualizes the spread of cybersecurity threats.  
+- Enables early detection for proactive defense.  
+
+---
+
+## 💻 *Chapter 4: System Implementation*  
+
+### 🔙 *Backend Development*  
+- *Spring Boot:* Handles user authentication and registration using *JWT*.  
+  ![Spring Boot Security](images/SprinBoot.png)  
+- *Postman:* API testing for authentication.  
+  ![Postman Testing](images/postman_test.png)  
+- *MongoDB:* Stores user data and session information.  
+  ![MongoDB Users](images/mongodbUsers.png)  
+- *Flask:* Hosts Python microservices for *RAG* and *Diffusion Models*.  
+
+### 🌐 *Frontend Development*  
+- *Angular:* Provides an interactive UI for seamless user interaction.  
+  ![Angular Project Architecture](images/Angular.png)  
+
+- *User Registration:*  
+  ![Register Page](images/register.png)  
+
+- *User Login:*  
+  ![Login Page](images/login.png)  
+  ![Logged In](images/loggedIn.png)  
+
+- *Homepage:*  
+  ![Homepage](images/homepage.png)  
+
+- *ChatBot Interface:*  
+  ![ChatBot](images/Chat0.png)  
+  ![ChatBot](images/Chat1.png)  
+
+- *Diffusion Model Interface:*  
+  ![Diffusion Interface](images/diffusionPages1.png)  
+
+---
+
+### ⚙ *DevOps/MLOps Integration*  
+- *CI/CD Pipelines:* Automated testing and deployment with *GitHub Actions*.  
+- *Docker:* Containerization for microservice isolation.  
+- *Kubernetes:* Service orchestration for scalability.  
+
+![Docker Angular](images/Docker_angular.png)  
+![Docker Backend](images/docker_backend.png)  
+
+---
+
+### 📂 *Repository Links*  
+- *Frontend:* [CyberGuard Frontend](https://github.com/firdaous-boulben/CyberGuard.git)  
+- *Backend (Spring Boot):* [ChatBot Security](https://github.com/hafsakzoun/ChatBoot-security.git)  
+- *RAG Model:* [Chatbot RAG](https://github.com/adnanelhayani/chatbot_rag.git)  
+- *Diffusion Model:* (To be added)  
+
+### 🛠 *Setup Instructions*  
+1. *Clone the Repositories:*  
+   bash
    git clone <frontend-repo>
    git clone <backend-repo>
    git clone <rag-repo>
-   ```
-2. **Build Docker Containers:**  
-   ```bash
+     
+2. *Build Docker Containers:*  
+   bash
    docker-compose up --build
-   ```
-3. **Deploy Kubernetes Cluster:**  
-   ```bash
+     
+3. *Deploy Kubernetes Cluster:*  
+   bash
    kubectl apply -f k8s/
-   ```
-4. **Access the UI:**  
-   Open `http://localhost:4200` in your browser.
+     
+4. *Access the UI:* Open http://localhost:4200 in your browser.
 
 ---
 
-## Chapter 5: Testing and Evaluation
-- **Functional Testing:** Ensures individual microservices operate correctly.
-- **Integration Testing:** Validates service interactions.
-- **Performance Testing:** Measures response times and scalability.
-- **Threat Prediction Accuracy:** Evaluates the effectiveness of the diffusion model.
+## 🧪 *Chapter 5: Testing and Evaluation*  
+- *Functional Testing:* Verifies individual services work as expected.  
+- *Integration Testing:* Ensures seamless interaction between services.  
+- *Performance Testing:* Assesses system scalability and response time.  
+- *Threat Prediction Accuracy:* Evaluates the effectiveness of the diffusion model.
 
 ---
 
-## Chapter 6: Conclusion
-CyberGuard successfully combines language understanding models, diffusion models, and advanced RAG techniques to create an intelligent, scalable cybersecurity chatbot. By leveraging a microservices architecture and DevOps/MLOps practices, the system achieves high performance, scalability, and maintainability. Future enhancements could involve expanding data sources for RAG, refining diffusion model algorithms, and introducing real-time incident response capabilities.
+## ✅ *Chapter 6: Conclusion*  
+*CyberGuard* successfully integrates *Language Understanding Models, **Diffusion Models, and **RAG* to deliver intelligent cybersecurity solutions. Its microservices architecture ensures scalability, and DevOps/MLOps practices streamline deployment. Future improvements could include expanding data sources, refining diffusion algorithms, and enhancing real-time incident response.
 
-## Contribution
-Contributions are welcome through issues and pull requests.
+---
 
-## License
-[MIT License](LICENSE)  
+## 🤝 *Contribution*  
+We welcome contributions through issues and pull requests.
 
-## Contact
-For any inquiries, contact the project team at [your.email@example.com].
+## 📄 *License*  
+[MIT License](LICENSE)
+
+---
