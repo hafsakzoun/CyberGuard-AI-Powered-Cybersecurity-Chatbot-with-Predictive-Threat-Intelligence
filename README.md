@@ -77,7 +77,7 @@ The RAG microservice uses *Google Generative AI (Gemini Pro)* for advanced natur
 ### 📡 *API Endpoints*  
 - **POST /ask**: Accepts user queries and returns AI-generated answers with source references.  
 
-![RAG Model Running](images/image.png)  
+![RAG Model Running](images/endpoint.png)  
 
 ---
 
