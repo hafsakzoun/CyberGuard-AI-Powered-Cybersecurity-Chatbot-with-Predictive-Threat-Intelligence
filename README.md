@@ -116,7 +116,7 @@ The *Diffusion Model* simulates how cybersecurity threats spread across networks
 
 - *User Login:*  
   ![Login Page](images/login.png)  
-  ![Logged In](images/loggedIn.png)  
+  ![Logged In](images/LoggedIn.png)  
 
 - *Homepage:*  
   ![Homepage](images/homepage.png)  
