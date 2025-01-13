@@ -13,7 +13,13 @@
   - BOULBEN Firdaous  
   - EL HAYANI Adnan  
   - EL YAHYAOUY Imane  
-  - TOUYEB Zakaria  
+  - TOUYEB Zakaria
+### 📂 *Repository Links*  
+- *Frontend:* [CyberGuard Frontend](https://github.com/firdaous-boulben/CyberGuard.git)  
+- *Backend (Spring Boot):* [ChatBot Security](https://github.com/hafsakzoun/ChatBoot-security.git)  
+- *RAG Model:* [Chatbot RAG](https://github.com/adnanelhayani/chatbot_rag.git)  
+- *Diffusion Model:* - [Network Flow Analysis and Threat Diffusion Simulation](https://github.com/ELYAHYAOUY-FL/Diffusion_Prediction_Service.git)
+                     - [tram_generator](https://github.com/Zakaria1298727/framegenerator/tree/master) 
 
 ---
 
@@ -179,15 +185,6 @@ The Diffusion Model integrates seamlessly into the *CyberGuard* system, contribu
 ![Docker Backend](images/docker_backend.png)  
 
 ---
-
-### 📂 *Repository Links*  
-- *Frontend:* [CyberGuard Frontend](https://github.com/firdaous-boulben/CyberGuard.git)  
-- *Backend (Spring Boot):* [ChatBot Security](https://github.com/hafsakzoun/ChatBoot-security.git)  
-- *RAG Model:* [Chatbot RAG](https://github.com/adnanelhayani/chatbot_rag.git)  
-- *Diffusion Model:* - [Network Flow Analysis and Threat Diffusion Simulation](https://github.com/ELYAHYAOUY-FL/Diffusion_Prediction_Service.git)
-                     - [tram_generator](https://github.com/Zakaria1298727/framegenerator/tree/master) 
-
-
 ### 🛠 *Setup Instructions*  
 1. *Clone the Repositories:*  
    bash
