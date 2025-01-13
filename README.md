@@ -184,7 +184,9 @@ The Diffusion Model integrates seamlessly into the *CyberGuard* system, contribu
 - *Frontend:* [CyberGuard Frontend](https://github.com/firdaous-boulben/CyberGuard.git)  
 - *Backend (Spring Boot):* [ChatBot Security](https://github.com/hafsakzoun/ChatBoot-security.git)  
 - *RAG Model:* [Chatbot RAG](https://github.com/adnanelhayani/chatbot_rag.git)  
-- *Diffusion Model:* (To be added)  
+- *Diffusion Model:* - [Network Flow Analysis and Threat Diffusion Simulation](https://github.com/ELYAHYAOUY-FL/Diffusion_Prediction_Service.git)
+                     - [tram_generator](https://github.com/ELYAHYAOUY-FL/Diffusion_Prediction_Service.git) 
+
 
 ### 🛠 *Setup Instructions*  
 1. *Clone the Repositories:*  
