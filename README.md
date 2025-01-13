@@ -102,7 +102,7 @@ The *Diffusion Model* simulates how cybersecurity threats spread across networks
 - *Spring Boot:* Handles user authentication and registration using *JWT*.  
   ![Spring Boot Security](images/SprinBoot.png)  
 - *Postman:* API testing for authentication.  
-  ![Postman Testing](images/postman_test.png)  
+  ![Postman Testing](images/postman.png)  
 - *MongoDB:* Stores user data and session information.  
   ![MongoDB Users](images/mongodbUsers.png)  
 - *Flask:* Hosts Python microservices for *RAG* and *Diffusion Models*.  
