@@ -1,7 +1,5 @@
 # *CyberGuard: AI-Powered Cybersecurity Chatbot*
 
-![CyberGuard ChatBot](images/empty.png)  
-
 ## 📄 *Submission Details*  
 - *Title:* CyberGuard: Combining Diffusion Models and Language Understanding Models in a Cybersecurity Chatbot with Advanced Retrieval-Augmented Generation (RAG) Using a Microservices Architecture in a DevOps/MLOps Context  
 - *Submission Date:* 2024-01-14  
@@ -64,15 +62,11 @@ The RAG microservice uses *Google Generative AI (Gemini Pro)* for advanced natur
 ![Architecture of RAG Model](images/archRagModel.png)  
 ![MongoDB Conversation Storage](images/conversations.png)  
 
----
-
 ### 🚀 *How It Works*  
 1. *PDF Processing:* Loads and splits cybersecurity PDFs into searchable chunks.  
 2. *Data Embedding:* Uses *Google Generative AI embeddings* to encode the data.  
 3. *Query Handling:* RAG model generates accurate, context-aware responses.  
 4. *User Interaction:* REST API endpoints enable chatbot communication with the frontend.  
-
----
 
 ### 📡 *API Endpoints*  
 - **POST /ask**: Accepts user queries and returns AI-generated answers with source references.  
@@ -92,7 +86,13 @@ The *Diffusion Model* simulates how cybersecurity threats spread across networks
 
 ### 🔑 *Features*  
 - Visualizes the spread of cybersecurity threats.  
-- Enables early detection for proactive defense.  
+- Enables early detection for proactive defense.
+
+### 🚀 *How It Works*  
+1. *Threat Data Collection:* Gathers network threat data from various sources.
+2. *Data Preprocessing:* Cleans and formats the data for model input.
+3. *Model Simulation:* Tests the impact of any given IP address within the network on the entire network using the diffusion model.
+4. *Visualization:* Displays the spread and impact of threats from the selected IP within the network.
 
 ---
 
@@ -138,30 +138,17 @@ The *Diffusion Model* simulates how cybersecurity threats spread across networks
 ![Docker Angular](images/Docker_angular.png)  
 ![Docker Backend](images/docker_backend.png)  
 
----
-
 ### 📂 *Repository Links*  
 - *Frontend:* [CyberGuard Frontend](https://github.com/firdaous-boulben/CyberGuard.git)  
 - *Backend (Spring Boot):* [ChatBot Security](https://github.com/hafsakzoun/ChatBoot-security.git)  
 - *RAG Model:* [Chatbot RAG](https://github.com/adnanelhayani/chatbot_rag.git)  
-- *Diffusion Model:* (To be added)  
+- *Diffusion Model:* [Diffusion Model](https://github.com/firdaous-boulben/threat-analysis.git)
 
 ### 🛠 *Setup Instructions*  
-1. *Clone the Repositories:*  
-   bash
-   git clone <frontend-repo>
-   git clone <backend-repo>
-   git clone <rag-repo>
-     
-2. *Build Docker Containers:*  
-   bash
-   docker-compose up --build
-     
-3. *Deploy Kubernetes Cluster:*  
-   bash
-   kubectl apply -f k8s/
-     
-4. *Access the UI:* Open http://localhost:4200 in your browser.
+1. Clone the Repositories
+2. Build Docker Containers: <code>docker-compose up --build</code>
+3. Deploy Kubernetes Cluster: <code>kubectl apply -f k8s/</code>  
+4. *Access the UI:* Open http://localhost:4200
 
 ---
 
