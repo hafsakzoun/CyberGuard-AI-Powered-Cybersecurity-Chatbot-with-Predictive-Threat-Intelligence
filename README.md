@@ -1,5 +1,7 @@
 # *CyberGuard: AI-Powered Cybersecurity Chatbot*
 
+![CyberGuard ChatBot](images/empty.png)  
+
 ## 📄 *Submission Details*  
 - *Title:* CyberGuard: Combining Diffusion Models and Language Understanding Models in a Cybersecurity Chatbot with Advanced Retrieval-Augmented Generation (RAG) Using a Microservices Architecture in a DevOps/MLOps Context  
 - *Submission Date:* 2024-01-14  
@@ -62,11 +64,15 @@ The RAG microservice uses *Google Generative AI (Gemini Pro)* for advanced natur
 ![Architecture of RAG Model](images/archRagModel.png)  
 ![MongoDB Conversation Storage](images/conversations.png)  
 
+---
+
 ### 🚀 *How It Works*  
 1. *PDF Processing:* Loads and splits cybersecurity PDFs into searchable chunks.  
 2. *Data Embedding:* Uses *Google Generative AI embeddings* to encode the data.  
 3. *Query Handling:* RAG model generates accurate, context-aware responses.  
 4. *User Interaction:* REST API endpoints enable chatbot communication with the frontend.  
+
+---
 
 ### 📡 *API Endpoints*  
 - **POST /ask**: Accepts user queries and returns AI-generated answers with source references.  
@@ -78,21 +84,55 @@ The RAG microservice uses *Google Generative AI (Gemini Pro)* for advanced natur
 ## 🔮 *Chapter 3: Diffusion Model for Threat Forecasting*  
 
 ### 📌 *Overview*  
-The *Diffusion Model* simulates how cybersecurity threats spread across networks, providing proactive defense mechanisms for early threat detection.  
+The *Diffusion Model* predicts and visualizes how cybersecurity threats spread across a network, helping identify vulnerable nodes and enabling proactive defense mechanisms. It provides a critical layer of foresight, allowing administrators to respond to potential breaches before they escalate.
 
 ### 🛠 *Implementation*  
-- *Technology:* Python  
-- *Framework:* Flask Microservice  
+The Diffusion Model is implemented as a Python-based microservice and uses graph-based simulation to model threat propagation.
+
+- **Language:** Python  
+- **Framework:** Flask  
+- **Visualization Library:** NetworkX, Matplotlib  
+
 
 ### 🔑 *Features*  
-- Visualizes the spread of cybersecurity threats.  
-- Enables early detection for proactive defense.
+- **Threat Simulation:** Models the spread of cybersecurity threats across network nodes.  
+- **Impact Analysis:** Highlights affected nodes (orange), uninfected nodes (blue), and the targeted IP (red).  
+- **Visualization:** Generates intuitive graphs to represent threat diffusion.  
+- **Proactive Defense:** Provides early detection and prioritization of high-risk areas.  
 
+
+### 📂 *Architecture*   
+1. **Final_model_diffusion.ipynb:** A Jupyter Notebook for preprocessing data, generating data using the diffusion model, and preparing it for classification. This includes training and classification using the RandomForestClassifier to determine whether nodes are affected or not.  
+2. **App.py:** A backend file that uses the model to provide an interface for testing an IP input within the network and simulating the spread of the threat.  
+3. **frame_generator:** Training and implementation of the diffusion model to generate frames for simulation. 
+
+ 
 ### 🚀 *How It Works*  
-1. *Threat Data Collection:* Gathers network threat data from various sources.
-2. *Data Preprocessing:* Cleans and formats the data for model input.
-3. *Model Simulation:* Tests the impact of any given IP address within the network on the entire network using the diffusion model.
-4. *Visualization:* Displays the spread and impact of threats from the selected IP within the network.
+1. **Data Input:** Network flow data is processed to construct a graph of connected devices.  
+2. **Graph Simulation:** Threat diffusion is modeled using probabilistic algorithms, simulating how malware or attacks propagate.  
+3. **Visualization:** Graphs are generated to highlight the status of each node (infected, uninfected, or target).  
+4. **Output:** Predictions and visualizations are displayed in the *Diffusion Model Interface*.  
+
+
+###  *Graphical Representation*  
+Below is an example graph illustrating the diffusion model's output. Nodes are color-coded to reflect their status in the network.  
+
+![Diffusion Graph Example](https://github.com/ELYAHYAOUY-FL/Diffusion_Prediction_Service/blob/main/image/graph.png)
+
+---
+
+###  *API Endpoints*  
+  - `/test_ip` (POST): Accepts a JSON payload with the IP address to test and returns impact analysis results, including the path to the visualization graph.
+
+---
+
+### *Integration with CyberGuard*  
+The Diffusion Model integrates seamlessly into the *CyberGuard* system, contributing to:  
+- **Threat Prediction:** Displays risk zones on the network.  
+- **Incident Response:** Suggests targeted actions for high-risk areas.  
+- **User Interface:** The Angular frontend displays diffusion results with interactive visualizations.  
+
+![Diffusion Model Interface](https://github.com/ELYAHYAOUY-FL/Diffusion_Prediction_Service/blob/main/image/gaphSUM.jpeg)
 
 ---
 
@@ -138,17 +178,30 @@ The *Diffusion Model* simulates how cybersecurity threats spread across networks
 ![Docker Angular](images/Docker_angular.png)  
 ![Docker Backend](images/docker_backend.png)  
 
+---
+
 ### 📂 *Repository Links*  
 - *Frontend:* [CyberGuard Frontend](https://github.com/firdaous-boulben/CyberGuard.git)  
 - *Backend (Spring Boot):* [ChatBot Security](https://github.com/hafsakzoun/ChatBoot-security.git)  
 - *RAG Model:* [Chatbot RAG](https://github.com/adnanelhayani/chatbot_rag.git)  
-- *Diffusion Model:* [Diffusion Model](https://github.com/firdaous-boulben/threat-analysis.git)
+- *Diffusion Model:* (To be added)  
 
 ### 🛠 *Setup Instructions*  
-1. Clone the Repositories
-2. Build Docker Containers: <code>docker-compose up --build</code>
-3. Deploy Kubernetes Cluster: <code>kubectl apply -f k8s/</code>  
-4. *Access the UI:* Open http://localhost:4200
+1. *Clone the Repositories:*  
+   bash
+   git clone <frontend-repo>
+   git clone <backend-repo>
+   git clone <rag-repo>
+     
+2. *Build Docker Containers:*  
+   bash
+   docker-compose up --build
+     
+3. *Deploy Kubernetes Cluster:*  
+   bash
+   kubectl apply -f k8s/
+     
+4. *Access the UI:* Open http://localhost:4200 in your browser.
 
 ---
 
