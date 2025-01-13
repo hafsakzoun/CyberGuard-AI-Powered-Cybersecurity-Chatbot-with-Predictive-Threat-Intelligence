@@ -61,7 +61,7 @@ The RAG microservice uses *Google Generative AI (Gemini Pro)* for advanced natur
 
 ### 🏗 *Project Architecture*  
 
-![Architecture of RAG Model](images/ArchRagModel.png)  
+![Architecture of RAG Model](images/archRagModel.png)  
 ![MongoDB Conversation Storage](images/conversations.png)  
 
 ---
